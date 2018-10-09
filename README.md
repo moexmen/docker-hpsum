@@ -111,6 +111,9 @@ Error: Cannot launch sum_service_x64 locally. Reason: General failure. (Error: F
 To resolve this, the sqlite3 cache at `conf/8_3_1_7` has to be deleted. This pretty much resets SUM so it's not a viable solution.
 
 
-Other Resources
+Notes and Resources
 ---
 1. [SUM User Guide and other documentation](https://support.hpe.com/hpesc/public/home/documentHome?docId=emr_na-a00047899en_us&document_type=5000001&pmrsr=0&sort_by=relevance&sp4ts.oid=1008862656)
+1. [HPE's Software Delivery Repository](http://downloads.linux.hpe.com/).
+1. SUM data resides in `/var/tmp/sum` and it's sqlite3 database is found in `/var/tmp/sum/<sum_version>`.
+
