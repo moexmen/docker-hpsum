@@ -1,0 +1,11 @@
+version: '3'
+services:
+  sum:
+    build: .
+    image: hpe-sum
+    container_name: hpe-sum
+    ports:
+      - "63002:63002"
+    volumes:
+      - ./baselines:/opt/baselines
+      - ./conf:/var/tmp/sum

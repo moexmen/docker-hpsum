@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# SUM attempts to launch a browser after its engine starts
+# but there's no browser in the Docker container!
+#
+# This is a dummy file to trick SUM that a browser exists.
+
+exit 0
