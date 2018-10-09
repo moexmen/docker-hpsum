@@ -65,6 +65,7 @@ Follow these steps to create new baseline:
    1. `Enter directory path`: Point to the download path
 
 ### Create Node Groups
+Create a node group to group servers:
 1. Select `Smart Update Manager > Node Groups`.
 1. Click `+ Create Node Group`.
    1. `Node Group Name`: Arbitrary
@@ -72,15 +73,21 @@ Follow these steps to create new baseline:
    1. `Baseline`: If you went with Option 1, assign the baseline here
    1. `Additional Package`: If you went with Option 2, assign the baseline here
 
+Config credentials to login to the nodes:
+1. Select `Smart Update Manager > Node Groups`.
+1. Click on the node group you just created.
+1. Select `Actions > Edit`.
+1. Enter the iLO `Username` and `Password` that has the permission to deploy firmware updates.
+
 ### Add Nodes
 1. Select `Smart Update Manager > Node Nodes`.
 1. Click `+ Add Node`.
    1. Nodes
-      1. Select operation: Add a single node or known range of nodes
-      1. IPV4 / IPV6 / DNS: IPs_of_nodes
-      1. Nodes type: iLO
+      1. `Select operation`: Add a single node or known range of nodes
+      1. `IPV4 / IPV6 / DNS`: IPs_of_nodes
+      1. `Nodes type`: iLO
    1. Node Group
-      1. Assign to: The Node Group(s) you created above
+      1. `Assign to`: The Node Group(s) you created above
 1. Credentials: Enter iLO username/password
 
 
